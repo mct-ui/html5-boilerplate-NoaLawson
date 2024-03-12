@@ -353,9 +353,14 @@ a {
 
 /* gutter modifiers, these affect o-layout__item too */
 
-.o-layout--gutter {}
+.o-layout--gutter {
+  padding: 0 calc($grid-gutter-s * -1);
+}
 
-.o-layout--gutter>.o-layout__item {}
+.o-layout--gutter>.o-layout__item {
+  padding: 0 $grid-gutter-s;
+
+}
 
 /* reverse horizontal row modifier */
 
